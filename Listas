@@ -48,3 +48,41 @@ products_dict.items()
 # Add a new key-value pair (or update)
 products_dict["UI56"] = 40
 
+Sets and Tuples
+# Tuplas são coleções ordenadas e imutáveis de itens, que podem conter diferentes tipos de dados.
+# Creating a tuple
+office_locations = ("New York City", "London", "Leuven")
+# Convert another data structure to a tuple
+attendees = tuple(attendees_list)
+# Access the second element
+office_locations[1]
+"London"
+
+# Sets são coleções não ordenadas, mutáveis e sem elementos duplicados.
+# Sets são usados para eliminar duplicadas pq se vc transformar um conjunto de dados em um set, ao imprimir só virá os itens únicos
+# Create an attendee set
+attendees_set = {"John Smith", "Alan Jones", "Roger Thompson","John Smith", "Brandon Sharp", "Sam Washington"}
+print(attendees_set)
+{'Alan Jones', 'Brandon Sharp', 'John Smith', 'Roger Thompson', 'Sam Washington'} 
+# Convert to a set
+attendees_set = set(attendees_list)
+# Check the data type
+type(attendees_set)
+set
+# Trying to subset a set - Sets não possuem índices, é impossível acessar um dos elementos apenas
+attendees_set[0]
+TypeError: 'set' object is not subscriptable
+# Sorting a set
+sorted(attendees_set) #sorted() returns a list
+['Alan Jones', 'Brandon Sharp', 'John Smith', 'Roger Thompson', 'Sam Washington']
+
+
+
+
+
+
+
+
+
+
+
