@@ -1,4 +1,4 @@
-# Listas: 
+# Listas: são coleções ordenadas e mutáveis que armazenam múltiplos itens, podendo conter diferentes tipos de dados.
 prices = [10, 20, 30, 15, 25, 35]
 # Access every other element
 prices[::2]
@@ -22,3 +22,29 @@ prices[3:]
 # Get the first three elements
 prices[:3]
 [10, 20, 30]
+
+#Dicionários: são coleções não ordenadas de pares chave-valor, onde cada chave é única e mapeia para um valor.
+# Creating a dictionary
+products_dict = {"AG32": 10, "HT91": 20, "PL65": 30, "OS31": 15, "KB07": 25, "TR48": 35} # todos os elementos entre chaves, sintaxe <key>:<value>
+
+# Find the product's price
+products_dict["AG32"]
+10
+
+Get all values from a dictionary
+products_dict.values()
+dict_values([10, 20, 30, 15, 25, 35])
+
+# Retrieve all keys in a dictionary
+products_dict.keys()
+dict_keys(['AG32', 'HT91', 'PL65', 'OS31', 'KB07', 'TR48'])
+
+# Print the dictionary
+print(products_dict)
+
+# Get all items (key-value pairs)
+products_dict.items()
+
+# Add a new key-value pair (or update)
+products_dict["UI56"] = 40
+
